@@ -41,6 +41,7 @@ export default function SignInPage() {
         setError('Invalid email or password')
       } else {
         // Check if user is admin
+        //gooooofy 
         const session = await getSession()
         if (session?.user?.role === 'ADMIN') {
           router.push('/admin')
